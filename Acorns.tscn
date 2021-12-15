@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Acorn.tscn" type="PackedScene" id=1]
+
+[node name="Acorns" type="Spatial"]
+
+[node name="Akorn" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.889169, 0.457579, 0, -0.457579, 0.889169, 0, 0.18517, 0 )
+
+[node name="Akorn2" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.888273, 0.459316, 0, -0.459316, 0.888273, -0.0930038, 0.0961397, 0.234343 )
+
+[node name="Akorn3" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.781041, -0.62448, 0, 0.62448, 0.781041, 0, 0, 0, 1, 0.0929297, 0.0961397, 0.214928 )
+
+[node name="Akorn4" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.814389, 0.580319, 0, -0.580319, 0.814389, 0, 0, 0, 1, 0.246572, 0.126842, 0.0455076 )
+
+[node name="Akorn5" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.823255, -0.567671, 0, 0.567671, 0.823255, 0, 0, 0, 1, 0.223973, 0.163376, -0.21543 )
+
+[node name="Akorn6" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.831731, 0.555178, 0, -0.555178, -0.831731, 0, 0, 0, 1, 0.059947, 0.0961397, -0.161067 )
+
+[node name="Akorn7" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.637854, 0.770157, 0, -0.770157, 0.637854, 0, 0, 0, 1, -0.250636, 0.175147, -0.0800678 )
+
+[node name="Akorn8" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.914783, -0.403944, 0, 0.289016, 0.654514, 0.698628, -0.282207, -0.639093, 0.715486, -0.160929, 0.25466, -0.152433 )
+
+[node name="Akorn9" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.80002, 0.599973, 0, -0.599973, 0.80002, 0, 0, 0, 1, 0.0619874, 0.249055, -0.270461 )
+
+[node name="Akorn10" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.359557, -0.933123, 0, 0.933123, 0.359557, 0, 0, 0, 1, -0.25067, 0.0961397, 0.0881206 )
+
+[node name="Akorn11" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.761516, 0.648147, 0, -0.648147, 0.761516, -0.108435, 0.0961397, -0.0763013 )
+
+[node name="Akorn12" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.923478, 0.383651, 0, -0.383651, 0.923478, 0.105432, 0.0961397, -0.033447 )

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://resources/akorn.gltf" type="PackedScene" id=1]
+
+[node name="Acorn" type="Spatial"]
+
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 0.0947902, 0, 0, 0, 0.0947902, 0, 0, 0, 0.0947902, 0, 0, 0 )
+
+[node name="acorn" parent="Spatial" instance=ExtResource( 1 )]

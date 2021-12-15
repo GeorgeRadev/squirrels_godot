@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://resources/tree_trunk.gltf" type="PackedScene" id=1]
+
+[node name="Trunk" type="Spatial"]
+
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.028, 0, 0.06 )
+
+[node name="tree_trunk" parent="Spatial" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1.05212, 0, 0, 0, 1, 0, 0, 0 )

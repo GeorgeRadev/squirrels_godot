@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://resources/tree_top_house.gltf" type="PackedScene" id=1]
+[ext_resource path="res://Top.gd" type="Script" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 5.80413, 0.115032, 8.86157 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.197906, 0.151494, 0.335244 )
+
+[node name="Top" type="StaticBody"]
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.161029, 0, 0, 0, 0.161029, 0, 0, 0, 0.161029, 0.0716145, 0.677877, 0 )
+shape = SubResource( 1 )
+
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 0.161029, 0, 0, 0, 0.161029, 0, 0, 0, 0.161029, 0.0716145, -0.0938969, 0 )
+
+[node name="tree_top_house" parent="Spatial" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1.04255, 0, 0, 0 )
+
+[node name="tree_top_house2" parent="Spatial" instance=ExtResource( 1 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 9.88063e-08, 0, -1.13021, -0.429808, 0, 0.758773 )
+
+[node name="Spatial2" type="Spatial" parent="."]
+
+[node name="DropArea" type="Area" parent="Spatial2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Spatial2/DropArea"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.354395, 1.53731, -1.02452 )
+shape = SubResource( 2 )
+
+[node name="Spatial3" type="Spatial" parent="."]
+
+[node name="DropArea" type="Area" parent="Spatial3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Spatial3/DropArea"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.354, 1.44423, 1.025 )
+shape = SubResource( 2 )
+
+[connection signal="body_entered" from="Spatial2/DropArea" to="." method="_on_DropArea_body_entered"]
+[connection signal="body_entered" from="Spatial3/DropArea" to="." method="_on_DropArea_body_entered"]
